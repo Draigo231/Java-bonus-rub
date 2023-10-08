@@ -17,14 +17,14 @@ public class Main {
 
         int depositAmount = 1100;
 
-        int bonusRub; // кол-во бонусов, если пополнение на 1000 и более рублей
+        int bonusRub; // множитель бонусов, если пользователь зарегистрирован 
         if (isRegistered) {
             bonusRub = 1;
         } else {
             bonusRub = 0;
         }
 
-        int bonus;
+        int bonus; // расчёт суммы бонусов при условии что попелнение больше чем на 1000
         if (depositAmount > 1000) {
             bonus = depositAmount / 100 * bonusRub;
         } else {
