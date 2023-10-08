@@ -26,7 +26,7 @@ public class Main {
 
         int bonus; // расчёт суммы бонусов при условии что попелнение больше чем на 1000
         if (depositAmount > 1000) {
-            bonus = depositAmount / 100 * bonusRub;
+            bonus = depositAmount  * bonusRub / 100;
         } else {
             bonus = 0;
         }
