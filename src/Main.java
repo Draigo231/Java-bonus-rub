@@ -12,7 +12,7 @@ public class Main {
         // на экран.
 
         int amount = 100; // кол-во денег на счету клиента (руб.)
-        int depositAmount = 1100;
+        int depositAmount = 1100; // кол-во денег при пополнении счёта 
 
         int bonusRub; // множитель бонусов при соблюдении условия оператора
         if (depositAmount > 1000) {
