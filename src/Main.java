@@ -23,13 +23,16 @@ public class Main {
         }
 
         int bonus; // расчёт суммы бонусов при условии что попелнение больше чем на 1000
-        if (depositAmount > 1000) {
+        int bonusDivider = 1000; // делитель для расчёта бонуса
+        
+        if (depositAmount > bonusDivider) {
             bonus = depositAmount  * bonusRub / 100;
         } else {
             bonus = 0;
         }
 
         int bonusFinal = depositAmount + bonus;
+        
         System.out.println("Баланс (руб.): " + amount);
         System.out.println("Сумма пополнения (руб.): " + depositAmount);
         System.out.println("Баланс без учёта бонусов после пополнения (руб.): " + (amount + depositAmount));
